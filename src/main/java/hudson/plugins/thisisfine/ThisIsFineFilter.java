@@ -28,6 +28,7 @@ import jenkins.model.Jenkins;
  * @author Asgeir Storesund Nilsen
  */
 public class ThisIsFineFilter implements Filter {
+  final String PLUGIN_NAME = "thisisfine-rgy";
 
   final String patternStr = "/(\\d{2}x\\d{2})/%s(_anime|)\\.(gif|png)";
 
@@ -70,10 +71,10 @@ public class ThisIsFineFilter implements Filter {
     if (InitMilestone.EXTENSIONS_AUGMENTED.compareTo(jenkins.getInitLevel()) > 0) {
       return null;
     }
-    if (uri.contains("plugin/thisisfine/")) {
+    if (uri.contains("plugin/" + PLUGIN_NAME)) {
       return null;
     }
-    String basePath = "/static/.../plugin/thisisfine/";
+    String basePath = "/static/.../plugin/" + PLUGIN_NAME + "/";
     Matcher m;
     if ((m = patternBlue.matcher(uri)).find()) {
       return basePath + m.group(1) + "/fine" + m.group(2) + "." + m.group(3);

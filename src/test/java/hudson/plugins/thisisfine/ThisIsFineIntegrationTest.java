@@ -43,7 +43,7 @@ public class ThisIsFineIntegrationTest {
         URL url = webClient.createCrumbedUrl("images/48x48/blue.png");
         WebResponse webResponse = webClient.getPage(url).getWebResponse();
         String digest = hash("SHA-1", IOUtils.toByteArray(webResponse.getContentAsStream()));
-        assertEquals("Content does not match expected digest", "51d751a3faabfa82d38d797481d6b6633d691856", digest);
+        assertEquals("Content does not match expected digest", "ef9f38236bc456752006a2505cad0edc3b5303aa", digest);
         assertTrue("Cache-Control header missing",
                 webResponse.getResponseHeaderValue("Cache-Control").contains("s-maxage"));
         assertTrue("Response has expired",
