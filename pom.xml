@@ -31,32 +31,18 @@ THE SOFTWARE.
         <version>2.26</version>
     </parent>
 
-    <artifactId>thisisfine</artifactId>
+    <artifactId>thisisfine-rgy</artifactId>
     <packaging>hpi</packaging>
-    <version>1.15-SNAPSHOT</version>
-    <name>This Is Fine</name>
-    <description>This Is Fine dog as build status indicator.</description>
+    <version>1.16-SNAPSHOT</version>
+    <name>This Is Fine RGY</name>
+    <description>This Is Fine dog as build status indicator - 2019, colorized.</description>
     <url>http://wiki.jenkins-ci.org/display/JENKINS/This+Is+Fine</url>
     <inceptionYear>2019</inceptionYear>
 
     <developers>
         <developer>
-            <id>llbit</id>
-            <email>jesper@llbit.se</email>
-            <name>Jesper Öqvist</name>
+            <id>FyiurAmron</id>
             <timezone>1</timezone>
-        </developer>
-        <developer>
-            <id>asgeirn</id>
-            <email>asgeir@twingine.no</email>
-            <name>Asgeir Storesund Nilsen</name>
-            <timezone>1</timezone>
-        </developer>
-        <developer>
-            <id>nfalco79</id>
-            <name>Nikolas Falco</name>
-            <email>nfalco79@hotmail.com</email>
-            <timezone>+1</timezone>
         </developer>
     </developers>
 
